@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}        
+.section-container{
+    display: flex;
+}
+
+.section1{
+    width: 60%;
+    background-color: #faf6f656;
+     padding: 70px 0 0px 100px;
+     height: 1000px;
+ }
+.section1 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+.section1 .header .logo{
+    display: flex;
+    gap: 15px;
+}
+.section1 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin: 150px 0 50px 0;
+}
+.section1 .arrow-div{
+    display: flex;
+    justify-content: space-between;
+}
+.section1 .content h1{
+    font-size: 60px;
+}
+.section1 .content p{
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    border-left: 5px solid black;
+    line-height: 40px;
+}
+.section1 .content .btn-img{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.section1 .content .btn{
+}
+.nav-links {
+     display: flex;
+    gap: 65px;
+}
+.nav-1 a:hover{
+    color: orange;
+    transition: 0.5s;
+}
+.nav-2 a:hover{
+    color: orange;
+    transition: 0.5s;
+
+}
+.nav-3 a:hover{
+    color: orange;
+    transition: 0.5s;
+
+}
+.section2{
+    width: 40%;
+    height: 1000%;
+    padding: 70px 100px 0 0;
+}
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0 0 0;
+}
+.section2 .img-container .img1{
+    margin-top: 20px;
+    position: relative;
+}
+.section2 .img-container .img2{
+    position: absolute;
+}
+.section2 .img-container .img3{
+    position: absolute;
+    height: 40%;
+}
+.section2 .arrow-div{
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2 .header .nav:hover{
+    color: orange;
+    transition: 0.5s;
+}
+button{
+    background-color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+
+}
+button:hover{
+    background-color: red;
+    color: #fff;
+    border:1px solid red;
+    transition: 0.5s;
+}
+.footer{
+    background-color: rgb(43, 43, 99);
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .f img,h1,p{
+    margin-top: 10px;
+}
+
+/* responsive-header  */
+
+.responsive-section{
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+ }
+
+.responsive-section .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 25px;
+    width: 70%;
+}
+.responsive-section .header .logo{
+    display: flex;
+    gap: 10px;
+}
+.responsive-section .img-container{
+    width: 90%;
+    margin-right: 100px;
+}
+.responsive-section .btn{
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.responsive-section .curve-arrow-div{
+    display: flex;
+    justify-content: space-around;
+}
+.responsive-section .btn button{
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.responsive-section .footer
+.responsive-section .content-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+
+ }
+.responsive-section .content-section h1{
+    font-size: 40px;
+    margin-top: 45px;
+}
+.responsive-section .content-section p{
+    font-size: 30px;
+    margin-top: 45px;
+    border-left: 2px solid black;
+    padding: 0 0 0 20px;
+}
+.responsive-section .content-section .arrow1-div{
+    display: flex;
+    justify-content: space-around;
+}
+.responsive-section .content-section .arrow2-div{
+    display: flex;
+    justify-content: space-around;
+}
+.responsive-section .content-section .img-container{
+    display: flex;
+    justify-content: center;
+}
+.responsive-section .content-section .img-container .img1{
+   position: relative;
+}
+.responsive-section .content-section .img-container .img2{
+    position: absolute;
+ }
+ .responsive-section .content-section .img-container .img3{
+    position: absolute;
+ }
+ .responsive-section .footer{
+    background-color: #1b0e56;
+    padding: 40px 0 40px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+    height: 800px;
+    align-items: center;
+ }
+  
+@media screen and (max-width:900px) {
+    .section-container{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+@media screen and (min-width:900px) and (max-width:5000px){
+    .responsive-section{
+        display: none;
+    }
+
+}
+/* responsive-header  */
