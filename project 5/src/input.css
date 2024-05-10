@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* In some cases, I am encountering errors with the 'hidden' property. Therefore, I have created a 'hide' class.*/
+.hide{
+    @apply hidden
+}
+.nav-link-hover-effect{
+    @apply  hover:transition ease-in delay-300 hover:text-[#ff6600] 
+}
+
+.btn{
+    @apply bg-[#ff6600] text-[#fff] px-[25px] py-[10px] rounded-md border-0 hover:bg-[#ff6600c1]
+}

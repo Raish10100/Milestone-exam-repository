@@ -9,245 +9,308 @@
     <!-- fontowesome link   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- fontowesome link   -->
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- fontowesome link   -->
 </head>
 
-<body>
+<body class="bg-[#fff]">
 
-    <!-- IN SOME CASE THE TAILWIND CSS IS NOT WORKING ,SO THAT'S WHY I USED INLINE CSS  -->
 
-    <div class="section1 bg-gray-200 " style="padding: 50px 100px; height: 1200px;  ">
-        <header>
-            <div class="header flex justify-between gap " style="font-size: 25px ;">
-                <div class="logo">
-                    <img src="Pixlab assest/Logo.png" alt="">
-                </div>
-                <div class="navlinks  ">
-                    <ul class="flex gap-5" style="gap: 100px; font-weight: 700;">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Our Apps</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <div class="btn">
-                    <button class="ml-9" style="margin-left: 15px; color: orangered; font-weight: 700;">Login</button>
-                    <button style="margin-left: 15px; color: orangered; font-weight: 700;">Sign Up</button>
+    <!-- header -->
+
+    <header class="vs:px-[20px] sm:px-[50px] xl:px-[100px] ">
+        <nav class="vs:py-[20px] md:py-[50px] flex justify-between items-center">
+            <img src="Pixlab assest/Logo.png" alt="" class="sm:w-[240px] vs:w-[150px]">
+            <ul class="navlinks  gap-[40px] hide lg:flex">
+                <li class="nav-link-hover-effect"><a href="">Home</a></li>
+                <li class="nav-link-hover-effect"><a href="#about-us">About Us</a></li>
+                <li class="nav-link-hover-effect"><a href="">Our App</a></li>
+                <li class="nav-link-hover-effect"><a href="#contact-us">Contacts</a></li>
+            </ul>
+            <div class="btns  gap-[20px] hide lg:flex">
+                <button class="nav-link-hover-effect">Log in</button>
+                <button class="btn">Sign Up</button>
+            </div>
+            <img src="Pixlab assest/menu-icon.png" alt="" class="lg:hidden sm:w-[45px] vs:w-[32px]">
+        </nav>
+
+        <div class="header-content flex gap-[10px] sm:flex-row vs:flex-col-reverse vs:justify-center vs:items-center">
+            <div class="left-side flex flex-col justify-center vs:w-[90vw] sm:w-[50vw]">
+                <h1 class="sm:text-[40px] lg:text-[65px]  font-bold vs:py-[30px] vs:text-[30px] ">We boost growth for
+                    your statup business</h1>
+                <p class="vs:py-[20px] sm:py-[30px] lg:py-[70px] md:text-[20px] lg:text-[25px]">our goal is top at the
+                    heart of creativity services industry as a digital creator. In has a after comment.</p>
+                <div
+                    class="get-start flex gap-[15px] vs:mt-[20px] sm:mt-0 vs:flex-col sm:flex-row w-[50vw] md:justify-start vs:justify-start vs:items-s md:items-center">
+                    <div class="btn text-center vs:ml-[20px] sm:ml-0">Get Started</div>
+                    <img src="Pixlab assest/Learn More.png" alt="" class="vs:w-[200px]">
                 </div>
             </div>
-        </header>
+            <div class="right-side vs:w-[90vw] sm:w-[70vw]  flex vs:justify-center  ">
+                <img src="Pixlab assest/header main img.png" alt="" class="vs:w-[60%] sm:w-[600px] md:w-[100%]">
+            </div>
+        </div>
+    </header>
 
-        <div class="content flex justify-center  items-center" style="height: 90%;">
-            <div class="c1 flex flex-col justify-center">
-                <h1 style="font-size: 100px; font-weight: 700;">We boost <br>grouth for your<br>startup business</h1>
-                <p class=" text-7xl" style="margin-top: 50px;">Our goal is top at the heart of creativity services
-                    industry<br>as a digital creator in has a after comment</p>
-                <div class="btn" style="margin-top: 50px; font-size: 25px; ">
-                    <button class="p-5 rounded-xl"
-                        style=" border-radius: 15px; margin-left: 20px ; background-color: orangered; color: white;">Get
-                        started</button>
-                    <button class="p-5 rounded-xl"
-                        style=" border-radius: 15px; margin-left: 20px ; background-color: orangered; color: white;">Learn
-                        More</button>
+
+    <!-- Vision & Goal -->
+
+    <div id="about-us" class="section-vision-goal vs:px-[20px] sm:px-[50px] xl:px-[100px]  vs:py-[50px] sm:py-[100px]">
+        <div class="title text-center">
+            <p>SERVICE</p>
+            <h1 class="vs:text-[30px] sm:text-[50px] font-semibold">Our Vision & Our Goal</h1>
+        </div>
+        <div class="cards py-[70px] flex flex-row gap-[35px] justify-center items-center flex-wrap">
+            <div
+                class="card py-[40px] vs:px-[10px] sm:px-[40px] flex flex-col justify-center items-center  w-[350px] shadow-2xl rounded-3xl ">
+                <img src="Pixlab assest/G-D.png" alt="">
+                <h2 class="vs:text-[30px] sm:text-[35px]">Graphic Design</h2>
+                <p class="py-[30px] text-center">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    Quisque dui mi, bibendum eu erat
+                    id, ultricies semper metus. Nunc
+                    dapibus laoreet dolor nec
+                    imperdiet. </p>
+                <div class="btn">Learn More</div>
+            </div>
+            <div
+                class="card py-[40px] vs:px-[10px] sm:px-[40px] flex flex-col justify-center items-center  w-[350px] shadow-2xl rounded-3xl">
+                <img src="Pixlab assest/V-E.png" alt="">
+                <h2 class="vs:text-[30px] sm:text-[35px]">Video Editing</h2>
+                <p class="py-[30px] text-center">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    Quisque dui mi, bibendum eu erat
+                    id, ultricies semper metus. Nunc
+                    dapibus laoreet dolor nec
+                    imperdiet. </p>
+                <div class="btn">Learn More</div>
+            </div>
+            <div
+                class="card py-[40px] vs:px-[10px] sm:px-[40px] flex flex-col justify-center items-center  w-[350px] shadow-2xl rounded-3xl">
+                <img src="Pixlab assest/D-M.png" alt="">
+                <h2 class="vs:text-[30px] sm:text-[35px]">Digital Marketing</h2>
+                <p class="py-[30px] text-center">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    Quisque dui mi, bibendum eu erat
+                    id, ultricies semper metus. Nunc
+                    dapibus laoreet dolor nec
+                    imperdiet. </p>
+                <div class="btn">Learn More</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Explore Components and Blocks -->
+
+    <div
+        class="explore-section pb-[30px] vs:px-[20px] sm:px-[50px] xl:px-[20vw] flex vs:flex-col-reverse sm:flex-row vs:items-center vs:justify-center sm:gap-[5px] md:gap-[20px] xl:gap-[15%] lg:justify-between">
+        <div class="left-side  md:w-[300px] vs:mt-[30px] sm:mt-0">
+            <div class="content">
+                <h2 class="text-[30px] font-bold">Many Blocks and <br> Components</h2>
+                <p class="py-[30px]">Startup Framework contains components
+                    and complex blocks which can easily be
+                    integrated into almost any design.</p>
+            </div>
+            <div class="explore-btn vs:mt-[10px] md:mt-[30px] lg:mt-[50px]">
+                <button class="px-[30px] py-[10px] rounded-3xl border-[2px] border-[#b1acac]"><a
+                        href="">Explore</a></button>
+            </div>
+        </div>
+        <div class="right-side flex vs:justify-center sm:justify-center sm:items-center lg:justify-end">
+            <img src="Pixlab assest/Video Player.png" alt="" class="vs:w-[90%] sm:w-[100%]">
+        </div>
+    </div>
+
+
+
+    <!-- Testimonial -->
+
+    <div class="testimonial-section flex flex-col justify-center items-center ">
+        <div class="title text-center py-[60px]">
+            <p>Testimonial</p>
+            <h1 class="vs:text-[30px] sm:text-[50px] font-semibold">What Clients say about us</h1>
+        </div>
+        <div
+            class="testimonials-container px-[10px] flex xl:w-[70%] py-[60px] flex-wrap gap-[90px] justify-center items-center">
+            <div class="testimonial vs:w-[300px] sm:w-[400px] flex gap-[20px] md:w-[350px] lg:w-[400px]">
+                <div class="left-side ">
+                    <img src="Pixlab assest/Mask.png" alt="">
+                </div>
+                <div class="right-side w-[80%] flex flex-col gap-[20px]">
+                    <p class="font-bold">Get a fully retina ready site when
+                        you build with Startup Framework.
+                        Websites look sharper and more
+                        gorgeous on devices with retina
+                        display support</p>
+                    <p class="text-[15px] text-gray-600">RAYHAN CURRAN</p>
                 </div>
             </div>
-            <div class="c2">
-                <img src="Pixlab assest/joyful-guy-texting-message-smartphone2 1.png" width="980px" alt="">
+            <div class="testimonial vs:w-[300px] sm:w-[400px] md:w-[350px] flex gap-[20px] lg:w-[400px]">
+                <div class="left-side ">
+                    <img src="Pixlab assest/Mask (1).png" alt="">
+                </div>
+                <div class="right-side w-[80%] flex flex-col gap-[20px]">
+                    <p class="font-bold">Get a fully retina ready site when
+                        you build with Startup Framework.
+                        Websites look sharper and more
+                        gorgeous on devices with retina
+                        display support</p>
+                    <p class="text-[15px] text-gray-600">KAYLEY FRAME</p>
+                </div>
+            </div>
+            <div class="testimonial vs:w-[300px] sm:w-[400px] md:w-[350px] flex gap-[20px] lg:w-[400px]">
+                <div class="left-side ">
+                    <img src="Pixlab assest/Mask (2).png" alt="">
+                </div>
+                <div class="right-side w-[80%] flex flex-col gap-[20px]">
+                    <p class="font-bold">Get a fully retina ready site when
+                        you build with Startup Framework.
+                        Websites look sharper and more
+                        gorgeous on devices with retina
+                        display support</p>
+                    <p class="text-[15px] text-gray-600">GENE WHITFIELD</p>
+                </div>
+            </div>
+            <div class="testimonial vs:w-[300px] sm:w-[400px] flex gap-[20px] md:w-[350px] lg:w-[400px]">
+                <div class="left-side ">
+                    <img src="Pixlab assest/Userpic.png" alt="">
+                </div>
+                <div class="right-side w-[80%] flex flex-col gap-[20px]">
+                    <p class="font-bold">Get a fully retina ready site when
+                        you build with Startup Framework.
+                        Websites look sharper and more
+                        gorgeous on devices with retina
+                        display support</p>
+                    <p class="text-[15px] text-gray-600">ALLAN KIM</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- our team -->
+
+    <div id="contact-us" class="team-section vs:px-[10px] sm:px-[100px]">
+        <div class="title text-center py-[60px]">
+            <p>OUR TEAM</p>
+            <h1 class="vs:text-[30px] sm:text-[50px] font-semibold">Meet The Team</h1>
+        </div>
+        <div class="Team-Cards flex gap-[30px] flex-wrap justify-center">
+            <div class="card  border-[1px] border-[#a1a1b0] w-[380px] flex flex-col rounded-lg ">
+                <div
+                    class="upper-part flex justify-center items-center flex-col py-[40px] vs:px-[10px] sm:px-[90px] gap-[20px]">
+                    <img src="Pixlab assest/Mask (3).png" alt="">
+                    <h2 class="text-[25px] ">Vanessa Laird</h2>
+                    <p class="text-[#a1a1b0]">UI DESIGNER</p>
+                </div>
+                <div class="lower-part flex justify-between ">
+                    <div
+                        class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] rounded-bl-lg py-[15px]">
+                        <i class="fa-brands fa-twitter text-[25px] text-[#a1a1b0]"></i></div>
+                    <div class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] py-[15px] "><i
+                            class="fa-brands fa-facebook text-[25px] text-[#a1a1b0]"></i></div>
+                    <div
+                        class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] py-[15px] rounded-br-lg">
+                        <i class="fa-brands fa-square-instagram text-[25px] text-[#a1a1b0]"></i></div>
+                </div>
+            </div>
+            <div class="card border-[1px] border-[#a1a1b0] w-[380px] flex flex-col rounded-lg ">
+                <div
+                    class="upper-part flex justify-center items-center flex-col py-[40px] vs:px-[10px] sm:px-[90px] gap-[20px]">
+                    <img src="Pixlab assest/Userpic (1).png" alt="">
+                    <h2 class="text-[25px] ">Mason Campbell</h2>
+                    <p class="text-[#a1a1b0]">UI DESIGNER</p>
+                </div>
+                <div class="lower-part flex justify-between ">
+                    <div
+                        class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] rounded-bl-lg py-[15px]">
+                        <i class="fa-brands fa-twitter text-[25px] text-[#a1a1b0]"></i></div>
+                    <div class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] py-[15px] "><i
+                            class="fa-brands fa-facebook text-[25px] text-[#a1a1b0]"></i></div>
+                    <div
+                        class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] py-[15px] rounded-br-lg">
+                        <i class="fa-brands fa-square-instagram text-[25px] text-[#a1a1b0]"></i></div>
+                </div>
+            </div>
+            <div class="card border-[1px] border-[#a1a1b0] w-[380px] flex flex-col rounded-lg ">
+                <div
+                    class="upper-part flex justify-center items-center flex-col py-[40px] vs:px-[10px] sm:px-[90px] gap-[20px]">
+                    <img src="Pixlab assest/Userpic (2).png" alt="">
+                    <h2 class="text-[25px] ">Irea Evans</h2>
+                    <p class="text-[#a1a1b0]">CLIENT MANAGER</p>
+                </div>
+                <div class="lower-part flex justify-between ">
+                    <div
+                        class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] rounded-bl-lg py-[15px]">
+                        <i class="fa-brands fa-twitter text-[25px] text-[#a1a1b0]"></i></div>
+                    <div class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] py-[15px] "><i
+                            class="fa-brands fa-facebook text-[25px] text-[#a1a1b0]"></i></div>
+                    <div
+                        class="flex justify-center items-center w-[100%] border-[1px] border-[#a1a1b0] py-[15px] rounded-br-lg">
+                        <i class="fa-brands fa-square-instagram text-[25px] text-[#a1a1b0]"></i></div>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <div class="section2" style="height: 1500px; background-color: #dfdcdc;">
-        <h1 class="text-7xl font-bold text-center" style="padding-top: 250px;"> <span class="text-orange-500"
-                style="color: orangered;">Our</span> Vision & Our Goal</h1>
-        <div class="content flex justify-center items-center " style="height:80%; gap: 20px;">
-            <div class="c1 flex justify-center flex-col items-center rounded-xl"
-                style=" height: 60%; border-radius: 30px; padding: 10px 45px; background-color: #fff; width: 25%; border: 5px solid black; font-size: 25px;">
-                <h1 class="text-7xl" style="margin-top: 40px;">Graphic Design</h1>
-                <p style="font-size: 30px; margin-top: 60px;">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Officiis expedita debitis perspiciatis inventore earum
-                    incidunt excepturi maxime consequatur. Sequi, consequatur? adipisicing elit. Nam nobis quasi, itaque
-                    alias esse natus officiis voluptates earum inventore vel.</p>
-                <button
-                    style="background-color: orange ; padding: 10px 20px ; font-size: 35px ;  margin-top: 30px ; border-radius: 20px; font-weight: 700; color: wheat;">Learn
-                    More</button>
+    <!-- Subscribe -->
+    <div class="subscribe-section flex flex-col justify-center items-center vs:pb-[50px] sm:pb-[100px] md:pb-[150px]">
+        <div class="title text-center py-[100px]">
+            <p>OUR NEWSLETTER</p>
+            <h1 class="vs:text-[30px] sm:text-[50px] font-semibold">Subscribe Our Newsletter</h1>
+        </div>
+        <div class="content flex gap-[50px] justify-center items-center sm:px-[15px]  xl:w-[80%]  flex-wrap">
+            <div class="left-side">
+                <img src="Pixlab assest/Frame.png" alt="">
             </div>
-
-
-            <div class="c1 flex justify-center flex-col items-center rounded-xl"
-                style=" height: 60%; border-radius: 30px; padding: 10px 45px; background-color: #fff; width: 25%; border: 5px solid black; font-size: 25px;">
-                <h1 class="text-7xl" style="margin-top: 40px;">Video Editing</h1>
-                <p style="font-size: 30px; margin-top: 60px;">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Officiis expedita debitis perspiciatis inventore earum
-                    incidunt excepturi maxime consequatur. Sequi, consequatur? adipisicing elit. Nam nobis quasi, itaque
-                    alias esse natus officiis voluptates earum inventore vel.</p>
-                <button
-                    style="background-color: orange ; padding: 10px 20px ; font-size: 35px ;  margin-top: 30px ; border-radius: 20px; font-weight: 700; color: wheat;">Learn
-                    More</button>
-            </div>
-
-
-            <div class="c1 flex justify-center flex-col items-center rounded-xl"
-                style=" height: 60%; border-radius: 30px; padding: 10px 45px; background-color: #fff; width: 25%; border: 5px solid black; font-size: 25px;">
-                <h1 class="text-7xl" style="margin-top: 40px;">Digital Marketing</h1>
-                <p style="font-size: 30px; margin-top: 60px;">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Officiis expedita debitis perspiciatis inventore earum
-                    incidunt excepturi maxime consequatur. Sequi, consequatur? adipisicing elit. Nam nobis quasi, itaque
-                    alias esse natus officiis voluptates earum inventore vel.</p>
-                <button
-                    style="background-color: orange ; padding: 10px 20px ; font-size: 35px ;  margin-top: 30px ; border-radius: 20px; font-weight: 700; color: wheat;">Learn
-                    More</button>
+            <div class="right-side flex flex-col vs:w-[85%] sm:w-[70%] lg:w-[50%]">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusantium placeat fugit quam
+                    quasi rem, ipsa amet sapiente facilis praesentium odit eveniet blanditiis dolores tempora dolor,
+                    corporis atque minima ipsam?</p>
+                <input type="email" placeholder="Your E-mail here..."
+                    class="my-[40px] py-[15px] px-[45px] text-[20px] text-black placeholder:text-black border-[2px] rounded-full shadow-xl">
+                <div class="btn text-center ">Subscribe Our Newsletter</div>
             </div>
         </div>
     </div>
 
-    <div class="section3" style=" height: 1800px; background-color: #f0eded;">
-        <div class="container flex justify-around items-center" style="height: 1000px;">
-            <div class="c1" style="width: 30%;">
-                <h1 class="text-8xl">Many Block and<br>Components</h1>
-                <p style="font-size: 35px; width: 80%; margin-top: 60px;">Lorem, ipsum dolor sit amet consectetur
-                    adipisicing elit. Reiciendis soluta aliquid dicta placeat iure omnis itaque accusamus excepturi
-                    provident perferendis!</p>
-                <button class="bg-cyan-600"
-                    style="background-color: #4072e5; margin-top: 300px; padding: 10px 20px ; border-radius: 20px; font-size: 25px;">Explore</button>
-            </div>
-            <div class="c2" style="width: 40%;">
-                <img src="Pixlab assest/Video Player.png" width="100%" alt="">
-            </div>
+
+    <!-- footer -->
+
+    <div class="footer vs:px-[30px] sm:px-[100px] py-[50px] flex flex-col gap-[40px]">
+        <div
+            class="footer-bar flex vs:justify-center md:justify-between  items-center gap-[50px] py-[20px] flex-wrap border-b-[2px] w-[100%] border-gray-400">
+            <img src="Pixlab assest/Logo.png" alt="" class="w-[150px]">
+            <ul class="flex gap-[20px]  justify-center flex-wrap">
+                <li class="nav-link-hover-effect"><a href="">Portfolio</a></li>
+                <li class="nav-link-hover-effect"><a href="">How it Works</a></li>
+                <li class="nav-link-hover-effect"><a href="">Pricing</a></li>
+                <li class="nav-link-hover-effect"><a href="">About</a></li>
+                <li class="nav-link-hover-effect"><a href="">Login</a></li>
+            </ul>
+            <p class="copyright">&copy; 2024 <b>Raish Vadaviya</b>. All rights reserved</p>
         </div>
-
-        <div class="container2 " style="height: 1200px; padding-top: 60px; background-color: #eae3e3;">
-            <h1 class="text-8xl text-center"> <span style="color: orange;">What</span> Clients say about us</h1>
-            <div class="review flex justify-center items-center">
-                <div class="rows flex justify-center flex-col items-center">
-                    <div class="row1 flex" style=" justify-content: center;gap: 50px; width: 80%; padding-top: 200px;">
-                        <div class="c1 flex justify-center"
-                            style="width: 40%; gap: 100px; height: 300px; border-radius: 25px; padding: 20px 30px ; background-color: #fff;">
-                            <div class="content-container flex justify-center items-center">
-                                <img src="Pixlab assest/Mask (1).png" alt="" width="20%" style="height: 100px;">
-                                <div class="content flex    ">
-                                    <p style="width: 100%; height: 70px; margin-left: 50px; font-size: 30px;">Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Quos iste est cum eius eos,
-                                        nihil odio repudiandae vero, iure necessitatibus omnis laudantium debitis ea id
-                                        minus quod, minima vel officia.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="c1 flex justify-center"
-                            style="width: 40%; gap: 100px; height: 300px; border-radius: 25px; padding: 20px 30px ; background-color: #fff;">
-                            <div class="content-container flex justify-center items-center">
-                                <img src="Pixlab assest/Mask (2).png" alt="" width="20%" style="height: 100px;">
-                                <div class="content flex    ">
-                                    <p style="width: 100%; height: 70px; margin-left: 50px; font-size: 30px;">Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Quos iste est cum eius eos,
-                                        nihil odio repudiandae vero, iure necessitatibus omnis laudantium debitis ea id
-                                        minus quod, minima vel officia.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="row1 flex" style=" justify-content: center;gap: 50px; width: 80%; padding-top: 200px;">
-                        <div class="c1 flex justify-center"
-                            style="width: 40%; gap: 100px; height: 300px; border-radius: 25px; padding: 20px 30px ; background-color: #fff;">
-                            <div class="content-container flex justify-center items-center">
-                                <img src="Pixlab assest/Mask (3).png" alt="" width="20%" style="height: 100px;">
-                                <div class="content flex    ">
-                                    <p style="width: 100%; height: 70px; margin-left: 50px; font-size: 30px;">Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Quos iste est cum eius eos,
-                                        nihil odio repudiandae vero, iure necessitatibus omnis laudantium debitis ea id
-                                        minus quod, minima vel officia.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="c1 flex justify-center"
-                            style="width: 40%; gap: 100px; height: 300px; border-radius: 25px; padding: 20px 30px ; background-color: #fff;">
-                            <div class="content-container flex justify-center items-center">
-                                <img src="Pixlab assest/Mask.png" alt="" width="20%" style="height: 100px;">
-                                <div class="content flex    ">
-                                    <p style="width: 100%; height: 70px; margin-left: 50px; font-size: 30px;">Lorem
-                                        ipsum dolor sit amet consectetur adipisicing elit. Quos iste est cum eius eos,
-                                        nihil odio repudiandae vero, iure necessitatibus omnis laudantium debitis ea id
-                                        minus quod, minima vel officia.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="note">
+            <p class="text-gray-400">Startup Framework contains components and complex blocks which can easily be
+                integrated into almost any design.</p>
         </div>
+    </div>
 
-        <div class="section4" style="background-color: rgb(254, 247, 234); padding-top: 100px;">
-            <h1 class="text-8xl text-center font-bold">Meet The Team</h1>
-            <div class="team-container flex justify-center items-center " style=" gap: 90px;  height: 600px;">
-                <div class="c1 flex justify-center items-center flex-col "
-                    style=" width: 20%; background-color: #f5f3f3; height: 400px; border-radius: 30px; border: 5px solid black;">
-                    <img src="Pixlab assest/Userpic (1).png" alt="" width="20%">
-                    <h1 style="font-size: 40px; margin-top: 20px;" class="font-bold">Mason Campball</h1>
-                    <p style="font-size: 35px; margin-top: 20px;">UI designer</p>
-                </div>
 
-                <div class="c1 flex justify-center items-center flex-col "
-                    style=" width: 20%; background-color: #f5f3f3; height: 400px; border-radius: 30px; border: 5px solid black;">
-                    <img src="Pixlab assest/Userpic (2).png" alt="" width="20%">
-                    <h1 style="font-size: 40px; margin-top: 20px;" class="font-bold">Vanessa Laid</h1>
-                    <p style="font-size: 35px; margin-top: 20px;">UI designer</p>
-                </div>
 
-                <div class="c1 flex justify-center items-center flex-col "
-                    style=" width: 20%; background-color: #f5f3f3; height: 400px; border-radius: 30px; border: 5px solid black;">
-                    <img src="Pixlab assest/Userpic.png" alt="" width="20%">
-                    <h1 style="font-size: 40px; margin-top: 20px;" class="font-bold">Gini prakta</h1>
-                    <p style="font-size: 35px; margin-top: 20px;">UI designer</p>
-                </div>
-            </div>
-        </div>
-        <hr>
 
-        <div class="sub-footer" style="background-color: rgb(246, 243, 232);">
-            <h1 style="font-size: 80px; padding-top: 100px;" class="font-bold text-center"> <span
-                    style="color: orange;">Subscribe</span> Our Newsletter</h1>
-            <div class="content-img flex justify-around items-center" style="height: 800px;">
-                <img src="Pixlab assest/Frame.png" width="20%" alt="">
-                <div class="content-container">
-                    <p style="font-size: 35px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem officia
-                        voluptas iure ut sint optio.<br> sit amet consectetur adipisicing elit. Pariatur maiores ut amet
-                        deleniti a corporis.</p>
-                    <input type="email" placeholder="Your Email here"
-                        style="width: 1200px; font-size: 30px; padding: 30px 60px; outline: none; border-radius: 50px; margin-top: 60px; height: 50px;"><br>
-                    <button
-                        style="background-color: orange; width: 1200px; margin-top: 50px; border-radius: 20px; padding: 20px; font-weight: 700; color: #fbf7f7; font-size: 35px;">Subscribe
-                        to our channel</button>
-                </div>
-            </div>
-        </div>
 
-        <footer>
-            <div class="footer flex  justify-between items-center"
-                style=" padding: 20px 180px; background-color: #b7b2b2;">
-                <div class="logo-content flex items-center" style="gap: 150px;">
-                    <img src="Pixlab assest/Logo.png" alt="">
-                    <p style="font-size: 35px; font-weight: 600px;">&copy; 2023 All rights reserved.</p>
-                </div>
 
-                <div class="navlinks">
-                    <ul class="flex" style="gap: 70px; font-size: 30px;">
-                        <li>Products</li>
-                        <li>How its works</li>
-                        <li>Pricing</li>
-                        <li>About</li>
-                        <li>Login</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+
+
+
+
+  
 
 </body>
 
