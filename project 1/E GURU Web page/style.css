@@ -13,6 +13,16 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }        
+
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #cccccc; /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners */
+  }
+
 a{
     text-decoration: none;
 }
@@ -53,6 +63,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    padding: 0 5px;
 }
 .logo{
     display: flex;
@@ -111,13 +122,18 @@ nav{
 .btn-img img{
     margin-top: 20px;
 }
+.section1-btns button{
+    gap: 10px;
+    margin-top: 10px;
+    /* display: flex; */
+}
 /*  */
 /* section-2 */
 .section-2{
     display: flex;
     flex-direction: column;
     width: 50vw;
-
+    /* justify-content: center; */
 }
 .orange-arrow{
     width: 20px;
@@ -135,9 +151,9 @@ nav{
     position: relative;
 }
 .img2{
-    margin-top: -560px;
+    margin-top: -480px;
     margin-left: -20px;
-    position: relative;
+    position: absolute;
 }
 .img3{
     position: relative;
@@ -149,6 +165,7 @@ nav{
     display: none;
 
 }
+
 .section2-btns{
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +181,11 @@ footer{
     justify-content: space-around;
     align-items: center;
     padding: 50px 0;
-
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.f{
+    width: 300px;
 }
 .footer .f img,h1,p{
     margin-top: 10px;
@@ -173,12 +194,12 @@ footer{
 
 /* Mobile Responsive */
 @media screen and (max-width: 1110px) {
+    
     header{
-        margin-right: -20px;
-    }
-    header{
-        padding: 20px ;
+        padding: 10px ;
         width: 100vw;
+        margin-right: -20px;
+
     }
     .nav-links{
        display: none;
@@ -200,6 +221,7 @@ footer{
         justify-content: center;
         align-items: center;
         padding: 0;
+        
     }
     .section1-btn{
         display: none;
@@ -218,13 +240,10 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        width: 90%;
+        /* flex-direction: column; */
+        width:80%;
     }
-    .boy-img-container{
-        margin-left: -75px;
-        /* height: 550px; */
-    }
+ 
     .section2-btn{
         display: flex;
         flex-wrap: wrap;
@@ -233,46 +252,103 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
+   .orange-arrow{
+    margin-top: -50px;
+   }
+
    
+    .blue-arrow{
+        margin-top: -230px;
+    }
+
+
+    .boy-img-container{
+        margin-left: -75px;
+        /* height: 550px; */
+    }
     .boy-img-container{
         margin-left: -80px;
         margin-bottom: 20px;
         width: 200px;
+        margin-top: 60px;
     }
     .img1{
         position: relative;
-        width: 300px;
-        left: -20px;
+        width: 375px;
+        left: -46px;
+        top: -8px;
     }
     .img2{
-        margin-left: 50px;
+        margin-left: -36px;
         position: relative;
-        width: 300px;
-        left: -80px;
+        width: 415px;
+        left: -36px;
         /* margin-top: -400px; */
         top: -30px;
     }
     .img3{
         position: relative;
-        top: -328px;
-        right: -34px;
+        top: -389px;
+        right: -17px;
         height: 400px;
-        width: 200px;
-        height: 300px;
+        width: 266px;
+        height: 341px;
     }
-   
-    .blue-arrow{
-        margin-top: -230px;
-    }
+    
+
+
+
     footer{
         padding: 50px 0;
-
         width: 100vw;
-        flex-direction: column;
-        gap: 70px;
+        /* flex-direction: column; */
+        gap: 50px;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
  
+}
+
+@media screen and (min-width: 1554px) {
+    .img2 {
+        margin-top: -30px;
+        margin-left: -500px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .boy-img-container{
+        margin-left: -75px;
+        /* height: 550px; */
+    }
+    .boy-img-container{
+        margin-left: -80px;
+        margin-bottom: 20px;
+        width: 200px;
+        margin-top: 60px;
+    }
+    .img1{
+        position: relative;
+        width: 232px;
+        left: 22px;
+    }
+    .img2{
+        margin-left: 50px;
+        position: relative;
+        width: 240px;
+        left: -36px;
+        /* margin-top: -400px; */
+        top: -30px;
+    }
+    .img3{
+        position: relative;
+        top: -292px;
+        right: -60px;
+        height: 400px;
+        width: 164px;
+        height: 260px;
+    }
+
 }

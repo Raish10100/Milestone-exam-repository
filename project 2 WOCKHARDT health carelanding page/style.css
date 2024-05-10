@@ -8,6 +8,14 @@ html {
     overflow-x: hidden;
     font-family: poppins, sans-serif;
 }
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #5cb0e8; /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners */
+  }
 
 * {
     margin: 0;
@@ -676,6 +684,20 @@ nav .logo {
 }
 
 @media screen and (max-width: 780px) {
+    .content .cs1 h1 {
+        font-size: 31px;
+        color: white;
+    }
+    .content .cs1 p {
+        font-size: 15px;
+    }
+    .content .cs1 .btns{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        padding: 30px 20px;
+    }
     .content {
         flex-direction: column;
     }
