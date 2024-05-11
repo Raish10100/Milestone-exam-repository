@@ -1,10 +1,10 @@
-# PixLab Landing Page Project
+# Pixelab Landing Page Project
 
-Welcome to the PixLab Landing Page project! This landing page represents PixLab, a digital innovation hub, showcasing its services, projects, and expertise.
+Welcome to the Pixelab Landing Page project! This landing page represents Pixelab, a digital innovation hub, showcasing its services, projects, and expertise.
 
 ## Overview
 
-- The PixLab Landing Page is designed to provide a visually appealing and informative introduction to PixLab's services and offerings. It aims to attract potential clients and collaborators by highlighting PixLab's expertise in digital innovation and showcasing its projects and achievements.
+- The Pixelab Landing Page is designed to provide a visually appealing and informative introduction to Pixelab's services and offerings. It aims to attract potential clients and collaborators by highlighting Pixelab's expertise in digital innovation and showcasing its projects and achievements.
 - The page is crafted to be visually appealing and user-friendly, catering to users across various devices including desktops, laptops, tablets, and mobile phones, with responsiveness optimized for seamless viewing up to 300px width.
 
 
@@ -39,7 +39,7 @@ Welcome to the PixLab Landing Page project! This landing page represents PixLab,
 ## Features
 
 - **Professional Design**: Clean and modern layout with visually appealing design elements to create a positive impression.
-- **Information Showcase**: Highlighting PixLab's services, projects, and expertise to attract potential clients and collaborators.
+- **Information Showcase**: Highlighting Pixelab's services, projects, and expertise to attract potential clients and collaborators.
 - **Responsive Design**: Optimized for various screen sizes, ensuring a seamless experience on desktops, laptops, tablets, and mobile phones.
 - **User-Friendly Interface**: Intuitive navigation and layout for easy access to information and content.
 
