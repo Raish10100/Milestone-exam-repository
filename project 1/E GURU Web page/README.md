@@ -51,4 +51,4 @@ This project was created by **Raish Vadaviya** as part of the **Full Stack Web D
 
 ## License
 
-This project is licensed under the [MIT License]().
+This project is licensed under the [MIT License](https://github.com/Raish10100/Milestone-exam-repository/blob/master/LICENSE).
